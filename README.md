@@ -1,2 +1,2 @@
 # effective-sniffle
-Testing out some tooling for accuracy, practicality, and cost.
+Some Python project stuff to help get back into the swing of things.
