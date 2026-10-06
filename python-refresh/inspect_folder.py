@@ -1,10 +1,12 @@
+import datetime as dt
 from collections import Counter
-from datetime import datetime
 from pathlib import Path
+
 from rich.console import Console
 from rich.table import Table
 
 console = Console()
+now = dt.datetime.now(tz=dt.UTZ)
 
 def scan_directory(target_path: Path) -> tuple[Counter, int]:
     """Scan the target directory and return a Counter of file extensions and the total byte size."""
@@ -44,7 +46,7 @@ def main() -> None:
 
     console.print(table)
     console.print(f"\n[green]Total Size:[/green] {format_bytes(total_bytes)}")
-    console.print(f"[yellow]Last Scanned:[/yellow] {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    console.print(f"[yellow]Last Scanned:[/yellow] {now.strftime('%Y-%m-%d %H:%M:%S')}")
 
     if __name__ == "__main__":
         main()
