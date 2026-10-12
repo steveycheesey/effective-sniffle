@@ -6,7 +6,7 @@ from rich.console import Console
 from rich.table import Table
 
 console = Console()
-now = dt.datetime.now(tz=dt.UTZ)
+now = dt.datetime.now(tz=dt.UTC)
 
 def scan_directory(target_path: Path) -> tuple[Counter, int]:
     """Scan the target directory and return a Counter of file extensions and the total byte size."""
