@@ -4,6 +4,7 @@ from pathlib import Path
 
 from rich.console import Console
 from rich.table import Table
+from rich.markup import escape
 
 console = Console()
 now = dt.datetime.now(tz=dt.UTC)
@@ -30,10 +31,15 @@ def format_bytes(size: int) -> str:
     return f"{size:.2f} TB"
 
 def main() -> None:
+    print(">>> Main <<<")
+
     # Set the target path to the current working directory, or specify a different path if needed
     target = Path.cwd()
+    safe_path = escape(str(target.resolve())) # Escape the path for safe display of name with spaces in Rich
 
-    console.print(f"[bold cyan]Scanning directory:[/bold cyan] {target.resolve()}\n")
+    console.print(
+        f"[bold cyan]Scanning directory:[/bold cyan] [magenta]{safe_path}[/magenta]\n",
+        highlight=False)
     counts, total_bytes = scan_directory(target)
 
     #Build formatted table using Rich
@@ -48,5 +54,5 @@ def main() -> None:
     console.print(f"\n[green]Total Size:[/green] {format_bytes(total_bytes)}")
     console.print(f"[yellow]Last Scanned:[/yellow] {now.strftime('%Y-%m-%d %H:%M:%S')}")
 
-    if __name__ == "__main__":
-        main()
+if __name__ == "__main__":
+    main()
