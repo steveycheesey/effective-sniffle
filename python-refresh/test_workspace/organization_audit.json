@@ -1,0 +1,51 @@
+[
+  {
+    "original_filename": "unknown_file.xyz",
+    "category": "Miscellaneous",
+    "file_path": "unknown_file.xyz",
+    "size_bytes": 0,
+    "organized_at": "2026-10-21T10:55:52.634395"
+  },
+  {
+    "original_filename": "project_notes.txt",
+    "category": "Documents",
+    "file_path": "project_notes.txt",
+    "size_bytes": 0,
+    "organized_at": "2026-10-21T10:55:52.634532"
+  },
+  {
+    "original_filename": "backup.zip",
+    "category": "Archives",
+    "file_path": "backup.zip",
+    "size_bytes": 0,
+    "organized_at": "2026-10-21T10:55:52.634649"
+  },
+  {
+    "original_filename": "quarterly_report.pdf",
+    "category": "Documents",
+    "file_path": "quarterly_report.pdf",
+    "size_bytes": 0,
+    "organized_at": "2026-10-21T10:55:52.634726"
+  },
+  {
+    "original_filename": "raw_data.csv",
+    "category": "Miscellaneous",
+    "file_path": "raw_data.csv",
+    "size_bytes": 0,
+    "organized_at": "2026-10-21T10:55:52.634796"
+  },
+  {
+    "original_filename": "script.py",
+    "category": "Code",
+    "file_path": "script.py",
+    "size_bytes": 0,
+    "organized_at": "2026-10-21T10:55:52.634901"
+  },
+  {
+    "original_filename": "team_photo.jpg",
+    "category": "Images",
+    "file_path": "team_photo.jpg",
+    "size_bytes": 0,
+    "organized_at": "2026-10-21T10:55:52.635005"
+  }
+]
